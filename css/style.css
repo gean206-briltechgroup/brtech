@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #007FFF;
+    --primary: #d42a1d;
     --secondary: #555555;
     --light: #F1F3FA;
     --dark: #1C2035;
@@ -178,7 +178,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/about/about.png) center center no-repeat;
     background-size: cover;
 }
 

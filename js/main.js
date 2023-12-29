@@ -108,3 +108,24 @@
         }
 })(jQuery);
 
+$(document).ready(function () {
+    // Add click event listener to tab links
+    $('.GD-Tabs__tabs__li__BTN').on('click', function (e) {
+        e.preventDefault();
+
+        // Get the target tab content ID from the href attribute
+        var targetTabId = $(this).attr('href');
+        console.log(targetTabId);
+        // Hide all tab contents
+        $('#menu1X, #menu2X, #menu3X, #menu4X').removeClass('active'); // Updated this line
+
+        // Show the target tab content
+        $(targetTabId + 'X').addClass('active');
+
+        // Update active state for tab links
+        $('.GD-Tabs__tabs__li').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+});
+
+
