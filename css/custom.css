@@ -1,3 +1,12 @@
+
+.html, body {
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    color: #06080c;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #navbarCollapse {
     margin-left: 50px;
 }
@@ -667,4 +676,85 @@ a:active, a:hover {
 
 .GD-ProductCategory .card__content__description--font-control {
     font-size: 12px;
+}
+
+.GD-LandingWithCTA__titles {
+    margin-top: 30px;
+}
+
+.GD-LandingWithCTA__titles.left .big, .GD-LandingWithCTA__titles.left .medium {
+    text-align: left;
+}
+
+.GD-LandingWithCTA__titles .big {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    filter: drop-shadow(0 0 20px #000);
+    overflow: hidden;
+}
+
+.GD-LandingWithCTA__titles.left .big, .GD-LandingWithCTA__titles.left .medium {
+    text-align: left;
+}
+
+.GD-LandingWithCTA__titles .medium {
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.5;
+    filter: drop-shadow(0 0 20px #000);
+    overflow: hidden;
+}
+
+.GD-LandingWithCTA__call-to-actions.left {
+    justify-content: left;
+}
+
+@media screen and (min-resolution: 0.001dpcm)
+.GD-LandingWithCTA__call-to-actions {
+    text-align: center;
+}
+.GD-LandingWithCTA__call-to-actions {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+@media screen and (min-resolution: 0.001dpcm)
+.GD-LandingWithCTA__call-to-actions__btn-container {
+    display: inline-block;
+}
+.GD-LandingWithCTA__call-to-actions__btn-container {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.GD-LandingWithCTA__call-to-actions__btn-container__btn:link, .GD-LandingWithCTA__call-to-actions__btn-container__btn:visited {
+    color: #fff;
+}
+
+.GD-LandingWithCTA__call-to-actions__btn-container__btn {
+    min-width: 175px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 6px 10px 5px;
+    border: #fff solid 1px;
+    border-radius: 3px;
+    transition: background-color .3s linear, border .3s linear;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    min-height: 60px;
+}
+
+.GDHTMLMultipleLayout {
+    padding-top: 20px;
+    margin: 30px 0;
 }
