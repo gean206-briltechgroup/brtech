@@ -43,17 +43,16 @@
 
 
 <!-- Topbar Start -->
-<div class="container-fluid bg-primary text-white d-none d-lg-flex">
+<div class="container-fluid border-bttm GDHeaderTop__main d-none d-lg-flex">
     <div class="container py-3">
         <div class="d-flex align-items-center">
             <div class="ms-auto d-flex align-items-center">
-                <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Noida, Uttar Pradesh, India</small>
-                <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                <small class="ms-4"><i class="fa fa-envelope me-3 brandcolor"></i>info@example.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt me-3 brandcolor"></i>+91 99993 88641</small>
                 <div class="ms-3 d-flex">
                     <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.linkedin.com/company/briltech/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -81,7 +80,14 @@
                     <div class="navbar-nav">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <div class="nav-item dropdown">
+                            <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="services/parts-ac.html" class="dropdown-item">Spare Parts</a>
+                                <a href="services" class="dropdown-item">Service & Installation</a>
+                                <a href="services" class="dropdown-item">AMC</a>
+                            </div>
+                        </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
