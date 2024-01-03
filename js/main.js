@@ -83,6 +83,34 @@
         }
     });
 
+    $(".product-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            margin: 25,
+            loop: true,
+            center: false,
+            dots: false,
+            nav: true,
+            navText : [
+                '<i class="bi bi-chevron-left"></i>',
+                '<i class="bi bi-chevron-right"></i>'
+            ],
+            responsive: {
+    			0:{
+                    items:1
+                },
+                576:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
+                992:{
+                    items:4
+                }
+            }
+        });
+
 /* TO show thumbnail of the video. required API_KEY from google play console*/
     document.addEventListener('DOMContentLoaded', function () {
             var videoSrc = document.querySelector('.btn-play').getAttribute('data-src');
@@ -126,6 +154,33 @@ $(document).ready(function () {
         $('.GD-Tabs__tabs__li').removeClass('active');
         $(this).parent().addClass('active');
     });
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    });
 });
+
+function togglePopup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+
 
 

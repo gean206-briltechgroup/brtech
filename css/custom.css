@@ -287,6 +287,29 @@ a:active, a:hover {
     color: #33475b;
 }
 
+.shareThepage .shareThePageBTNS .popup .popuptext .popupSocialShare .socialMediaShareItem .mail {
+    background-color: #e61933;
+}
+
+.shareThepage .shareThePageBTNS .popup .popuptext .popupSocialShare .socialMediaShareItem .fb {
+    background-color: #306199;
+}
+
+.shareThepage .shareThePageBTNS .popup .popuptext .popupSocialShare .socialMediaShareItem .tw {
+    background-color: #26c4f1;
+}
+
+.shareThepage .shareThePageBTNS .popup .popuptext .popupSocialShare .socialMediaShareItem .ln {
+    background-color: #007bb6;
+}
+
+.shareThepage .shareThePageBTNS .popup .popuptext .popupSocialShare .socialMediaShareItem .socialMediaShareLink {
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    display: block;
+}
+
 .GD-Tabs {
     margin-bottom: 30px;
     margin-top: 30px;
@@ -758,3 +781,95 @@ a:active, a:hover {
     padding-top: 20px;
     margin: 30px 0;
 }
+
+.shareThepage .shareThePageBTNS .popup .show {
+    visibility: visible;
+    animation: p 1s;
+}
+
+.border-bttm {
+    border-bottom: 1px solid #cbd6e2;
+}
+
+.GDHeaderTop {
+    min-height: 60px;
+    overflow: visible;
+    z-index: 22;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid #cbd6e2;
+}
+
+.childbrandcolorhover:hover>a {
+    color: #d42a1d;
+}
+
+.dd_item_link {
+    padding: 5px 10px;
+    margin: 0;
+    height: 35px;
+    font-weight: 700;
+    color: #575757;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    border: transparent solid 1px;
+    font-size: 15px;
+}
+
+/* Services */
+.scs-custom-component-wrapper {
+    overflow: hidden;
+}
+
+h1, h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 400;
+    color: #33475b;
+    line-height: 1.1;
+
+}
+
+.container {
+    transition: margin .3s cubic-bezier(.17, .04, .03, .94);
+}
+
+.BRILTech_Header_Parts {
+    min-height: 200px;
+    background-image: url(/img/services/parts-ac/header/parts_header.png);
+}
+
+.BRILTech_Header_Parts_kits {
+    min-height: 200px;
+    background-image: url(/img/services/parts-ac/header/kits.png);
+}
+
+.BRILTech_Header_install {
+    min-height: 200px;
+    background-image: url(/img/services/parts-ac/header/installations.png);
+}
+
+.GD-LandingWithCTA {
+    min-height: 500px;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.GD-LandingWithCTA__shadow {
+    height: 100%;
+    width: 100%;
+    padding: 30px 0;
+    min-height: 500px;
+}
+
+.container-max-width {
+    overflow: hidden;
+}
+
