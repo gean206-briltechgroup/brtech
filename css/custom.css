@@ -873,3 +873,96 @@ h1, h2 {
     overflow: hidden;
 }
 
+@media (min-width: 992px)
+.col-md-6 {
+    width: 50%;
+}
+
+@media (min-width: 768px)
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 47.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container embed, .embed-container iframe, .embed-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.col-md-6 {
+    float: left;
+}
+
+.industrial-btn {
+    color: #fff !important;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.scs-component-bounding-box {
+    vertical-align: top;
+    padding: 0.01px;
+    -webkit-padding-before: 0.1px;
+    -webkit-padding-after: 0.1px;
+}
+
+.GD-ProductCategory .ui.card>.extra, .GD-ProductCategory .ui.cards>.card>.extra {
+    border-top: none !important;
+    background-color: #fff;
+}
+
+.ui.card>.extra a:not(.ui), .ui.cards>.card>.extra a:not(.ui) {
+    color: rgb(0, 0, 0, .4);
+}
+
+.ui.card>.content a:not(.ui), .ui.cards>.card>.content a:not(.ui) {
+    transition: color 0.1s ease;
+}
+.ui.card a, .ui.cards>.card a {
+    cursor: pointer;
+}
+.GD-ProductCategory .card__no-tags {
+    position: relative;
+    text-align: center;
+}
+
+.GD-ProductCategory .card__no-tags .callToAction {
+    padding: initial;
+}
+
+.ui.card>.content p:last-child, .ui.cards>.card>.content p:last-child {
+    margin-bottom: 0;
+}
+
+.ui.card>.content p, .ui.cards>.card>.content p {
+    margin: 0 0 0.5em;
+}
+
+.brand {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background: #ffffff;
+}
+
+.brand .brand-item img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.brand .brand-item {
+    text-align: center;
+}

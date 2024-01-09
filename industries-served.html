@@ -12,9 +12,10 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+          rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,7 +37,8 @@
 
 <body>
 <!-- Spinner Start -->
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+<div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+     id="spinner">
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
 </div>
 <!-- Spinner End -->
@@ -44,130 +46,990 @@
 
 <!-- Topbar Start -->
 <div class="container-fluid border-bttm GDHeaderTop__main d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-envelope me-3 brandcolor"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3 brandcolor"></i>+91 99993 88641</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.linkedin.com/company/briltech/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+    <div class="container py-3">
+        <div class="d-flex align-items-center">
+            <div class="ms-auto d-flex align-items-center">
+                <small class="ms-4"><i class="fa fa-envelope me-3 brandcolor"></i>customersupport@briltechgroup.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt me-3 brandcolor"></i>+91 99993 88641</small>
+                <div class="ms-3 d-flex">
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2"
+                       href="https://www.linkedin.com/company/briltech/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!-- Topbar End -->
 
 
 <!-- Navbar Start -->
 <div class="container-fluid bg-white sticky-top">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Logo">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <div class="d-flex align-items-center">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">BrilTech</h1>
                 </a>
-            </div>
-            <a href="index.html" class="navbar-brand d-lg-none">
-                <h1 class="fw-bold m-0">BrilTech</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex align-items-center" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto d-flex align-items-center">
+<!--                        <a href="index" class="GD-Dropdown dd_item_link nav-item nav-link active">Home</a>-->
+                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <div class="nav-item dropdown">
                             <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="services/parts-ac.html" class="dropdown-item">Spare Parts</a>
-                                <a href="services" class="dropdown-item">Service & Installation</a>
+                                <a href="services/parts-accessories.html" class="dropdown-item">Spare Parts</a>
+                                <a href="services/installations.html" class="dropdown-item">Service & Installation</a>
                                 <a href="services" class="dropdown-item">AMC</a>
                             </div>
                         </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-                        <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                            <a href="products/small-reciprocating-ac.html" class="dropdown-item">Small Reciprocating Air Compressors</a>
-                            <a href="products/reciprocating-oil-free-air-compressors.html" class="dropdown-item">Large Reciprocating Air compressor</a>
-                            <a href="products/oil-flooded-ac.html" class="dropdown-item">Oil-Flooded Rotary Screw Air compressors</a>
-                            <a href="products/oil-free-air-compressors.html" class="dropdown-item">Oil free Air Compressors (Class Zero)</a>
-                            <a href="products/air-treatment.html" class="dropdown-item">Air Treatment</a>
-                            <a href="products/simplair-compressed-air.html" class="dropdown-item">Compressed Air Aluminum Piping</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="products/small-reciprocating-ac.html" class="dropdown-item">Small Reciprocating Air Compressors</a>
+                                <a href="products/reciprocating-oil-free-air-compressors.html" class="dropdown-item">Large Reciprocating Air compressor</a>
+                                <a href="products/oil-flooded-accessories.html" class="dropdown-item">Oil-Flooded Rotary Screw Air compressors</a>
+                                <a href="products/oil-free-air-compressors.html" class="dropdown-item">Oil free Air Compressors (Class Zero)</a>
+                                <a href="products/air-treatments.html" class="dropdown-item">Air Treatment</a>
+                                <a href="products/simplair-compressed-air.html" class="dropdown-item">Compressed Air Aluminum Piping</a>
+                            </div>
                         </div>
+                        <a href="industries-served.html" class="nav-item nav-link">Industry Served</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="industries-served.html" class="nav-item nav-link">Industry Served</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+<!--                    <div class="ms-auto d-none d-lg-block">-->
+<!--                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>-->
+<!--                    </div>-->
                 </div>
-                <div class="ms-auto d-none d-lg-block">
-                    <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
-</div>
 <!-- Navbar End -->
 
-<div class="container-fluid page-reci-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container text-center py-5">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Industries Served</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Products</a></li>
-                <li aria-current="page" class="breadcrumb-item text-primary">Small Reciprocating Air Compressors</li>
-            </ol>
-        </nav>
+<div class="scs-custom-component scs-component scs-component-default-style"
+     style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;">
+    <div class="scs-component-content" style="width:100%;">
+        <div class="scs-custom-component-wrapper" style="">
+            <div data-asset-operation="view:COREBEF2D9C8F3F7484AA15899B2BF6F4171"
+                 data-scs-contenttype="IR-ProductCategoryPage-v1"
+                 data-scs-hydrate="true"
+                 id="e4dcbf03-daed-43b8-af0b-b31acf9bfb38customComponentDiv">
+                <header class="GD-LandingWithCTA container-max-width GD-LandingWithCTA"
+                        style="min-height: 200px; background-image: url(/content/published/api/v1.1/assets/CONTB6ECE6E6ACCE4D3A8DD4C324CC80A0E2/native?cb=_cache_20d2&amp;channelToken=8b12d6a31ca340d4a7a41afdb250f64d)">
+                    <div class="GD-LandingWithCTA__shadow "
+                         style="min-height: 200px; background-color: rgba(0,0,0,0.4)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="GD-LandingWithCTA__titles left"><h1 class="big"
+                                                                                    style="color: null; text-shadow: null">
+                                        Industries Served</h1></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="GD-LandingWithCTA__call-to-actions left">
+                                        <div class="GD-LandingWithCTA__call-to-actions__btn-container"><a
+                                                class="GD-LandingWithCTA__call-to-actions__btn-container__btn brandbackgroundhover"
+                                                data-color="undefined"
+                                                data-gtm="null" href="../air-compressor/modals/contact"
+                                                style="background-color: undefined">Contact
+                                            Us</a></div>
+                                        <div class="GD-LandingWithCTA__call-to-actions__btn-container"><a
+                                                class="GD-LandingWithCTA__call-to-actions__btn-container__btn brandbackgroundhover"
+                                                data-color="undefined" data-gtm="null"
+                                                href="../modals/request-a-quote"
+                                                style="background-color: undefined">Request
+                                            a Quote</a></div>
+                                        <div class="GD-LandingWithCTA__call-to-actions__btn-container"><a
+                                                class="GD-LandingWithCTA__call-to-actions__btn-container__btn brandbackgroundhover"
+                                                data-color="undefined" data-gtm="null"
+                                                href="../modals/aftermarket"
+                                                style="background-color: undefined">
+                                            Request Support</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- Footer Start -->
- <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, Uttar Pradesh 201301, IN</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99993 88641</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>customersupport@briltechgroup.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+<div class="scs-component-bounding-box"><!-- -->
+    <div>
+        <div class="scs-custom-component scs-component scs-component-default-style"
+             style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;">
+            <div class="scs-component-content" style="width:100%;">
+                <div class="scs-custom-component-wrapper" style="">
+                    <div data-asset-operation="view:COREBEF2D9C8F3F7484AA15899B2BF6F4171"
+                         data-scs-contenttype="IR-ProductCategoryPage-v1"
+                         data-scs-hydrate="true"
+                         id="a55f6484-7f65-4810-a58a-20016f776c2ecustomComponentDiv">
+                        <style>.relatedSingleItem {
+	height: 200px;
+}
+
+.ctaLinksContainer {
+	display: flex;
+	gap: 4px;
+}
+
+@media (max-width: 767px) {
+	.ctaLinksContainer {
+		flex-direction: column;
+	}
+	.ctaLinksContainer br {
+		display: none;
+	}
+	.ctaLinksContainer a {
+		margin: 0;
+	}
+}
+                        </style>
+                        <div class="" style="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12"><h3 class="brandcolor"></h3>
+                                        <p></p></div>
+                                </div>
+                            </div>
+                            <section class="container GD-ProductCategory">
+                                <div class="ui doubling stackable four cards product-parts ng-scope"
+                                     style="justify-content:center;">
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/aerospace-ac"
+                                                                                   id="_TEASER_CORE5570C671FAB646928E528AB799BAAF94"
+                                                                                   target="_self"><img
+                                                alt="20 list"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/20-list.png"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Aerospace</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/aerospace-ac"
+                                                                       id="_LEARNMORE_CORE5570C671FAB646928E528AB799BAAF94"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/air-separation-ac"
+                                                                                   id="_TEASER_CORE2F216A72011246869DB815545661E959"
+                                                                                   target="_self"><img
+                                                alt="industries served air separation air sep teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-air-separation-air-sep-teaser.jpg"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Air Separation</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/air-separation-ac"
+                                                                       id="_LEARNMORE_CORE2F216A72011246869DB815545661E959"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/iron-steel-ac"
+                                                                                   id="_TEASER_COREF1335E97DC3A4182857BB56DBB7A7524"
+                                                                                   target="_self"><img
+                                                alt="Air Compressors for the Iron &amp; Steel Industry from Ingersoll Rand"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/shutterstock-1.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Iron &amp; Steel</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/iron-steel-ac"
+                                                                       id="_LEARNMORE_COREF1335E97DC3A4182857BB56DBB7A7524"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/automotive-ac"
+                                                                                   id="_TEASER_CORE48ABAED214AE4814908BBFDF139B4C6B"
+                                                                                   target="_self"><img
+                                                alt="Ingersoll Rand Products"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/12.png"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Automotive</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/automotive-ac"
+                                                                       id="_LEARNMORE_CORE48ABAED214AE4814908BBFDF139B4C6B"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/craft-gourmet-ac"
+                                                                                   id="_TEASER_COREA0A0A015EE694730984E0C5BD3D6C4C4"
+                                                                                   target="_self"><img
+                                                alt="fb web  "
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/fb-web-banner.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Craft Gourmet F&amp;B</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/craft-gourmet-ac"
+                                                                       id="_LEARNMORE_COREA0A0A015EE694730984E0C5BD3D6C4C4"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/chemicals-ac"
+                                                                                   id="_TEASER_CORE85E996606E094733BB7627A53D7DAE03"
+                                                                                   target="_self"><img
+                                                alt="Air Compressors for the Chemical Industry"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/chemical-industry.jpg"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Chemicals Industry</h4>
+                                                <div class="card__content__description">
+                                                    <div class="card__content__description--font-control">Ingersoll Rand
+                                                        offers a range of efficient, reliable oil-free air compressors
+                                                        ideal for the chemical manufacturing industry. Click here to
+                                                        find out more
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/chemicals-ac"
+                                                                       id="_LEARNMORE_CORE85E996606E094733BB7627A53D7DAE03"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/craft-brewing-ac"
+                                                                                   id="_TEASER_COREAD3D7461E729491EB3FED837390C1D0A"
+                                                                                   target="_self"><img
+                                                alt="Craft brewing compressor"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-craft-brewing-craft-brewing-compressor-teaser.png"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Craft Brewing</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/craft-brewing-ac"
+                                                                       id="_LEARNMORE_COREAD3D7461E729491EB3FED837390C1D0A"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/distribution-center-ac"
+                                                                                   id="_TEASER_CORE5856538CC2D84C7C9878D85614792465"
+                                                                                   target="_self"><img
+                                                alt="dist web   1 fnl"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/dist-web-banner-1-fnl.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Distribution Center</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/distribution-center-ac"
+                                                                       id="_LEARNMORE_CORE5856538CC2D84C7C9878D85614792465"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/diy-ac"
+                                                                                   id="_TEASER_COREB1628BC8242E43E293CDBC7C6A75C73F"
+                                                                                   target="_self"><img
+                                                alt="DIY teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-diy-diy-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                DIY (Do-It-Yourself)</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/diy-ac"
+                                                                       id="_LEARNMORE_COREB1628BC8242E43E293CDBC7C6A75C73F"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/pressure-vacuum-solutions-ac"
+                                                                                   id="_TEASER_CORE9B73A7D25141481CA1C1225611EEC606"
+                                                                                   target="_self"><img
+                                                alt="pressure-vacuum-solutions-ac"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/23553-ev-battery-header.jpg"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                EV Battery Manufacturers</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/pressure-vacuum-solutions-ac"
+                                                                       id="_LEARNMORE_CORE9B73A7D25141481CA1C1225611EEC606"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/electronics-ac"
+                                                                                   id="_TEASER_COREAAA7B7314A884E9CBE57182006431495"
+                                                                                   target="_self"><img
+                                                alt="Electronics teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-electronics-electronics--photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Electronics</h4>
+                                                <div class="card__content__description">
+                                                    <div class="card__content__description--font-control">The
+                                                        electronics industry is heavily dependent on the continuous
+                                                        supply of high-quality compressed air being delivered to point
+                                                        of use in the production processes. 100% oil-free air is vital
+                                                        for manufacturing electronics, which is why ensuring you have
+                                                        uninterrupted, contamination-free air flowing through your
+                                                        compressed air equipment is so important. Our oil-free solutions
+                                                        make this easy while helping you to save energy &amp; ensure
+                                                        product quality!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/electronics-ac"
+                                                                       id="_LEARNMORE_COREAAA7B7314A884E9CBE57182006431495"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/food-and-beverage-ac"
+                                                                                   id="_TEASER_COREEB75DC03BC3A43B6B181F76F3AAAC100"
+                                                                                   target="_self"><img
+                                                alt="Food and Beverages teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-food-and-beverage-foodbeverages1compressorteaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Food and Beverage</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/food-and-beverage-ac"
+                                                                       id="_LEARNMORE_COREEB75DC03BC3A43B6B181F76F3AAAC100"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/manufacturing-industry"
+                                                                                   id="_TEASER_COREDF4A2E7AF65D40989D7D66C74E22FA9B"
+                                                                                   target="_self"><img
+                                                alt="general manufacturing social post 2"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/general-manufacturing-social-post-2.png"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Manufacturing Industry</h4>
+                                                <div class="card__content__description">
+                                                    <div class="card__content__description--font-control">The
+                                                        manufacturing industry, also known as the secondary sector,
+                                                        relies on compressed air for a range of different applications
+                                                        and production methods. These include powering pneumatic tools,
+                                                        cooling metalwork, painting, powder coating, conveyance, mixing,
+                                                        sparging and aeration. Due to air playing such a vital role in
+                                                        manufacturing processes, it's crucial that you find a reliable
+                                                        air compressor solution - that's where we can help you out!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/manufacturing-industry"
+                                                                       id="_LEARNMORE_COREDF4A2E7AF65D40989D7D66C74E22FA9B"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/glass-ac"
+                                                                                   id="_TEASER_COREDD6C771137F34886B413FF055E8B76BE"
+                                                                                   target="_self"><img
+                                                alt="Glass teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industries-served-glass-glass-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Glass</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/glass-ac"
+                                                                       id="_LEARNMORE_COREDD6C771137F34886B413FF055E8B76BE"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/heavy-truck-equipment-repair-ac"
+                                                                                   id="_TEASER_CORE7641A7A19D9C471E9149EC177F6BC934"
+                                                                                   target="_self"><img
+                                                alt="hvy trucking web   1 fnl"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/hvy-trucking-web-banner-1-fnl.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Heavy Truck &amp; Equipment Repair</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/heavy-truck-equipment-repair-ac"
+                                                                       id="_LEARNMORE_CORE7641A7A19D9C471E9149EC177F6BC934"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/liquefied-natural-gas-ac"
+                                                                                   id="_TEASER_CORE991FC41CF8C0413E9CAE4216A19B1874"
+                                                                                   target="_self"><img
+                                                alt="lng teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/lng-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Liquefied Natural Gas</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/liquefied-natural-gas-ac"
+                                                                       id="_LEARNMORE_CORE991FC41CF8C0413E9CAE4216A19B1874"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/metal-and-fabrication-ac"
+                                                                                   id="_TEASER_CORE0D55AB9F69324F138852A191C2F086B0"
+                                                                                   target="_self"><img
+                                                alt="Metalworking teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/metal-and-fabrication-metalworking-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Metal Fabrication</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/metal-and-fabrication-ac"
+                                                                       id="_LEARNMORE_CORE0D55AB9F69324F138852A191C2F086B0"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/metalworking-ac"
+                                                                                   id="_TEASER_COREB81F0C201A514BE3953FF58E606A995F"
+                                                                                   target="_self"><img
+                                                alt="metalworking  "
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/metalworking-banner.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Metalworking</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/metalworking-ac"
+                                                                       id="_LEARNMORE_COREB81F0C201A514BE3953FF58E606A995F"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/mining-ac"
+                                                                                   id="_TEASER_CORE56F048F1C1AC4A76A3D43EF4E1D28F42"
+                                                                                   target="_self"><img
+                                                alt="mining social post 3 en new"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/mining-social-post-3-en-new.png"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Mining</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/mining-ac"
+                                                                       id="_LEARNMORE_CORE56F048F1C1AC4A76A3D43EF4E1D28F42"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/oil-and-gas-ac"
+                                                                                   id="_TEASER_CORE3D2856595FBB442AA84F09A0ADE39D3C"
+                                                                                   target="_self"><img
+                                                alt="oilandgas teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/oil-and-gas-oilandgas-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Oil &amp; Gas</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/oil-and-gas-ac"
+                                                                       id="_LEARNMORE_CORE3D2856595FBB442AA84F09A0ADE39D3C"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/pharmaceutical-ac"
+                                                                                   id="_TEASER_CORE31A56058CCC14AED8C450923B87A9824"
+                                                                                   target="_self"><img
+                                                alt="Mission-Critical ISO 8573 Class 0 Compressed Air"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/mission-critical-iso-8573-class-0-compressed-air.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Pharmaceutical</h4>
+                                                <div class="card__content__description">
+                                                    <div class="card__content__description--font-control">Ingersoll Rand
+                                                        offers a range of oil-free solutions that meet Class 0 standards
+                                                        for a variety of pharmaceutical applications. Click to find out
+                                                        more
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/pharmaceutical-ac"
+                                                                       id="_LEARNMORE_CORE31A56058CCC14AED8C450923B87A9824"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/plastic-and-rubber-ac"
+                                                                                   id="_TEASER_CORED5E61B8B3E744BE9AB7C1EC4F4D2A963"
+                                                                                   target="_self"><img
+                                                alt="Plastic teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/plastic-and-rubber-plastic-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Plastic and Rubber</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/plastic-and-rubber-ac"
+                                                                       id="_LEARNMORE_CORED5E61B8B3E744BE9AB7C1EC4F4D2A963"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/power-generation-ac"
+                                                                                   id="_TEASER_CORE1BCC4C964D054E63A451BFCF0FDA403A"
+                                                                                   target="_self"><img
+                                                alt="power gen teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/power-generation-power-gen-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Power Generation</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/power-generation-ac"
+                                                                       id="_LEARNMORE_CORE1BCC4C964D054E63A451BFCF0FDA403A"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/pulp-paper-and-printing-ac"
+                                                                                   id="_TEASER_CORE0FF2DE3521504CC882E80FE19023AF32"
+                                                                                   target="_self"><img
+                                                alt="Pulp paper and printing teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/pulp-paper-and-printing-pulp-and-paper-photo-compressor-teaser.jpg"
+                                                style="undefined" width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Pulp, Paper and Printing</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/pulp-paper-and-printing-ac"
+                                                                       id="_LEARNMORE_CORE0FF2DE3521504CC882E80FE19023AF32"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/raw-materials-ac"
+                                                                                   id="_TEASER_COREA6F868B6602F4981B6605F7B5C6733E8"
+                                                                                   target="_self"><img
+                                                alt="Ingersoll Rand Products"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/1.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Raw Materials</h4>
+                                                <div class="card__content__description">
+                                                    <div class="card__content__description--font-control">Compressed air
+                                                        has an ever-growing presence within the raw materials and
+                                                        resources industry due to the need to power machinery such as
+                                                        pneumatic conveyors and air-powered dock levelers. Our expert
+                                                        compressed air technologies are the perfect solution in an
+                                                        environment where a consistent, reliable supply of clean, dry
+                                                        air is essential. We can create a system that maximizes the
+                                                        efficiency and productivity of all of your raw material
+                                                        applications.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/raw-materials-ac"
+                                                                       id="_LEARNMORE_COREA6F868B6602F4981B6605F7B5C6733E8"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/snowmaking-ac"
+                                                                                   id="_TEASER_CORE93C2F87DA8F8472AB21356D26657813E"
+                                                                                   target="_self"><img
+                                                alt="Snowmaking teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/snowmaking-snowmaking-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Snow Making</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/snowmaking-ac"
+                                                                       id="_LEARNMORE_CORE93C2F87DA8F8472AB21356D26657813E"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/textiles-ac"
+                                                                                   id="_TEASER_CORE8D7CF5DFF1A4414887235A620128B9BA"
+                                                                                   target="_self"><img
+                                                alt="Textiles"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/textiles-textiles-new-banner-min-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Textiles</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/textiles-ac"
+                                                                       id="_LEARNMORE_CORE8D7CF5DFF1A4414887235A620128B9BA"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/vehicle-services-ac"
+                                                                                   id="_TEASER_COREB81DC1A5CCAC4D6E9F051AD97DBBEB11"
+                                                                                   target="_self"><img
+                                                alt="Vehicle Services teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/vehicle-services-vehicle-services-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Vehicle Services</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/vehicle-services-ac"
+                                                                       id="_LEARNMORE_COREB81DC1A5CCAC4D6E9F051AD97DBBEB11"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/water-wastewater-treatment-ac"
+                                                                                   id="_TEASER_CORE166F40C601A24A01A57D6DAAA411EBB6"
+                                                                                   target="_self"><img
+                                                alt="wastewater treatment  2"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/wastewater-treatment-banner2.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Water and wastewater treatment</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/water-wastewater-treatment-ac"
+                                                                       id="_LEARNMORE_CORE166F40C601A24A01A57D6DAAA411EBB6"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/wood-products-ac"
+                                                                                   id="_TEASER_CORE468D20C27F5346BC86D44BDBAAA9532E"
+                                                                                   target="_self"><img
+                                                alt="woodworking teaser"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/wood-products-woodworking-photo-compressor-teaser.jpg"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Wood Products</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/wood-products-ac"
+                                                                       id="_LEARNMORE_CORE468D20C27F5346BC86D44BDBAAA9532E"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/fabricated-products"
+                                                                                   id="_TEASER_COREC81CDC2341CA425FAF23020434C06F12"
+                                                                                   target="_self"><img
+                                                alt="industrialsbackground"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/industrialsbackground.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Fabricated Products</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/fabricated-products"
+                                                                       id="_LEARNMORE_COREC81CDC2341CA425FAF23020434C06F12"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/plant-industry"
+                                                                                   id="_TEASER_COREF903CB9113B14648A79BDE03333F90C3"
+                                                                                   target="_self"><img
+                                                alt="plant-industry"
+                                                class="card__image"
+                                                height="240" loading="lazy" src="img/ind-served/plant-industry-1.PNG"
+                                                style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Plant Industry</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/plant-industry"
+                                                                       id="_LEARNMORE_COREF903CB9113B14648A79BDE03333F90C3"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                    <div class="ui raised card ">
+                                        <div class="content ieFlex top-content"><a class="js-relatedItem"
+                                                                                   href="../air-compressor/industries-served/renewable-natural-gas"
+                                                                                   id="_TEASER_CORE7BF27EFB59BA4C248A01767E49F456A4"
+                                                                                   target="_self"><img
+                                                alt="renewable-natural-gas"
+                                                class="card__image"
+                                                height="240" loading="lazy"
+                                                src="img/ind-served/biogas-recovery-farm.jpg" style="undefined"
+                                                width="240">
+                                            <div class="card__content"><h4 class="card__content__header--font-control">
+                                                Renewable Natural Gas</h4></div>
+                                        </a></div>
+                                        <div class="extra content "><a class="card__no-tags js-relatedItem"
+                                                                       href="../air-compressor/industries-served/renewable-natural-gas"
+                                                                       id="_LEARNMORE_CORE7BF27EFB59BA4C248A01767E49F456A4"
+                                                                       target="_self">
+                                            <div class="callToAction"><p class="brandcolor learnMoreLabel">Learn
+                                                More</p></div>
+                                        </a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="pc-data-container-hydrate"
+                             data-hydrate="{&quot;language&quot;:&quot;en&quot;,&quot;ps_key&quot;:&quot;&quot;,&quot;pageLocaleAlias&quot;:&quot;en-in&quot;,&quot;tabsPresent&quot;:false}"></div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-4">Our Office</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, Uttar Pradesh 201301, IN</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99993 88641</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>customersupport@briltechgroup.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-white mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Business Hours</h4>
+                <p class="mb-1">Monday - Friday</p>
+                <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                <p class="mb-1">Saturday</p>
+                <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                <p class="mb-1">Sunday</p>
+                <h6 class="text-light">Closed</h6>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Newsletter</h4>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative w-100">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" placeholder="Your email"
+                           type="text">
+                    <button class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" type="button">SignUp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Footer End -->
 
 
