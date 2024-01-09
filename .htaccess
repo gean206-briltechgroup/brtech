@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Redirect /file.html to /file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)\.html$ /$1 [L,R=301]
+
+# Serve content without the .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.html$
+RewriteRule ^(.+)$ $1.html [L]
