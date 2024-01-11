@@ -997,3 +997,31 @@ h1, h2 {
     display: inline-block;
     vertical-align: bottom;
 }
+
+.GDHTMLMultipleLayout img {
+    margin-top: 5px;
+}
+
+.cx__sez_img_dim_360 {
+    max-height: 360px !important;
+    max-width: 100% !important;
+}
+
+li, p {
+    font-size: 17px;
+    line-height: 1.625;
+}
+p {
+    margin: 0 0 10px;
+}
+
+.GDHTMLMultipleLayout h3 {
+    margin-top: 0;
+}
+.brandcolor {
+    color: #d42a1d !important;
+}
+
+h2.story, h3 {
+    font-size: 24px;
+}
