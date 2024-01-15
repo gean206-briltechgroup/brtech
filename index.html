@@ -12,9 +12,10 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+          rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -37,80 +38,93 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
+<!-- Spinner Start -->
+<div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+     id="spinner">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+</div>
+<!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid border-bttm GDHeaderTop__main d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-envelope me-3 brandcolor"></i>customersupport@briltechgroup.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3 brandcolor"></i>+91 99993 88641</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.facebook.com/profile.php?id=100063965318895&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="tel:+919999388641"><i class="fab fa-whatsapp fa-sm"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=https://www.linkedin.com/company/briltech/mycompany/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+<!-- Topbar Start -->
+<div class="container-fluid border-bttm GDHeaderTop__main d-none d-lg-flex">
+    <div class="container py-3">
+        <div class="d-flex align-items-center">
+            <div class="ms-auto d-flex align-items-center">
+                <small class="ms-4"><i
+                        class="fa fa-envelope me-3 brandcolor"></i>customersupport@briltechgroup.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt me-3 brandcolor"></i>+91 99993 88641</small>
+                <div class="ms-3 d-flex">
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2"
+                       href="https://www.facebook.com/profile.php?id=100063965318895&mibextid=ZbWKwL" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="tel:+919999388641"><i
+                            class="fab fa-whatsapp fa-sm"></i></a>
+                    <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2"
+                       href=https://www.linkedin.com/company/briltech/mycompany/?viewAsMember=true" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
+</div>
+<!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                <div class="d-flex align-items-center">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
-<!--                <a href="index.html" class="navbar-brand d-lg-none">-->
-<!--                    <h1 class="fw-bold m-0">BrilTech</h1>-->
-<!--                </a>-->
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto d-flex align-items-center">
-                        <a href="about.html" class="nav-item nav-link">About Us</a>
-                        <div class="nav-item dropdown">
-                            <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="services/parts-accessories.html" class="dropdown-item">Spare Parts</a>
-                                <a href="services/installations.html" class="dropdown-item">Service & Installation</a>
-                                <a href="services" class="dropdown-item">AMC</a>
-                            </div>
+<!-- Navbar Start -->
+<div class="container-fluid bg-white sticky-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <img alt="Logo" src="img/logo.png">
+                </a>
+            </div>
+            <!--                <a href="index.html" class="navbar-brand d-lg-none">-->
+            <!--                    <h1 class="fw-bold m-0">BrilTech</h1>-->
+            <!--                </a>-->
+            <button class="navbar-toggler me-0" data-bs-target="#navbarCollapse" data-bs-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto d-flex align-items-center">
+                    <a class="nav-item nav-link" href="about.html">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="service.html">Services</a>
+                        <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                            <a class="dropdown-item" href="services/parts-accessories.html">Spare Parts</a>
+                            <a class="dropdown-item" href="services/installations.html">Service & Installation</a>
+                            <a class="dropdown-item" href="services">AMC</a>
                         </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="products/small-reciprocating-ac.html" class="dropdown-item">Small Reciprocating Air Compressors</a>
-                                <a href="products/reciprocating-oil-free-air-compressors.html" class="dropdown-item">Large Reciprocating Air compressor</a>
-                                <a href="products/oil-flooded-accessories.html" class="dropdown-item">Oil-Flooded Rotary Screw Air compressors</a>
-                                <a href="products/oil-free-air-compressors.html" class="dropdown-item">Oil free Air Compressors (Class Zero)</a>
-                                <a href="products/air-treatments.html" class="dropdown-item">Air Treatment</a>
-                                <a href="products/simplair-compressed-air.html" class="dropdown-item">Compressed Air Aluminum Piping</a>
-                            </div>
-                        </div>
-                        <a href="industries-served.html" class="nav-item nav-link">Industry Served</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-<!--                    <div class="ms-auto d-none d-lg-block">-->
-<!--                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>-->
-<!--                    </div>-->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Products</a>
+                        <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                            <a class="dropdown-item" href="products/small-reciprocating-ac.html">Small Reciprocating Air
+                                Compressors</a>
+                            <a class="dropdown-item" href="products/reciprocating-oil-free-air-compressors.html">Large
+                                Reciprocating Air compressor</a>
+                            <a class="dropdown-item" href="products/oil-flooded-accessories.html">Oil-Flooded Rotary
+                                Screw Air compressors</a>
+                            <a class="dropdown-item" href="products/oil-free-air-compressors.html">Oil free Air
+                                Compressors (Class Zero)</a>
+                            <a class="dropdown-item" href="products/air-treatments.html">Air Treatment</a>
+                            <a class="dropdown-item" href="products/simplair-compressed-air.html">Compressed Air
+                                Aluminum Piping</a>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link" href="industries-served.html">Industry Served</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
                 </div>
-            </nav>
-        </div>
+                <!--                    <div class="ms-auto d-none d-lg-block">-->
+                <!--                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>-->
+                <!--                    </div>-->
+            </div>
+        </nav>
     </div>
-    <!-- Navbar End -->
+</div>
+<!-- Navbar End -->
 
 <!-- red-strip Start -->
 <div class="redstripe" style="display: block;">
@@ -120,343 +134,313 @@
 <!-- red-strip End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/home_carousel_1.png" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7 text-start">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH Equipments</strong></p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your Business</h1>
-                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight" style="pad">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/home_carousel_2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH Equipments</strong></p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your Business</h1>
-                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/home_carousel_3.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-7 text-end">
-                                    <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH Equipments</strong></p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInLeft"></h1>
-                                    <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
-                                </div>
+<!-- Carousel Start -->
+<div class="container-fluid px-0 mb-5">
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="header-carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="Image" class="w-100" src="img/home_carousel_1.png">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-7 text-start">
+                                <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH
+                                    Equipments</strong></p>
+                                <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
+                                    Business</h1>
+                                <a class="btn btn-primary rounded-pill py-3 px-5 animated slideInRight" href=""
+                                   style="pad">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- Brand Start -->
-    <div class="brand">
-        <div class="container-fluid">
-            <div class="brand-slider">
-                <div class="brand-item"><img src="img/cust/alliednippon.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/amber.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/apl.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/ardent.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/banera.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/bharat.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/bl.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/bp.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/cocacola.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/cs.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/dsfrp.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/haier.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/hamdard.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/honda.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/indianoil.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/isgec.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/ju.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/jublient.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/kothari.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/lg.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/modi.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/motherdairy.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/nilkamal.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/radico.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/ramson.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/rpf.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/sleepwell.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/smc.png" alt=""></div>
-                <div class="brand-item"><img src="img/cust/starpaper.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/subros.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/surya.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/swati.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/systemair.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/tata.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/teva.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/toyoinl.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/uflex.jpg" alt=""></div>
-                <div class="brand-item"><img src="img/cust/zahonero.jpg" alt=""></div>
+            <div class="carousel-item">
+                <img alt="Image" class="w-100" src="img/home_carousel_2.jpg">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-7 text-end">
+                                <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH
+                                    Equipments</strong></p>
+                                <h1 class="display-1 text-white mb-5 animated slideInLeft">Ready to Grow Your
+                                    Business</h1>
+                                <a class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft" href="">Explore
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- Brand End -->
-
-    <!-- Product Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Products</p>
-                <h1 class="display-5 mb-5">Best-selling products</h1>
-            </div>
-            <div class="row g-4">
-                <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="col-lg-12 col-md-12 service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="bg-light rounded-circle mx-auto mb-4">
-                                <img alt="Icon" class=" w-10 img-fluid" src="img/home/prd-1.jpg">
+            <div class="carousel-item">
+                <img alt="Image" class="w-100" src="img/home_carousel_3.jpg">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-7 text-end">
+                                <p class="fs-4 text-white animated slideInLeft">Welcome to <strong>BRILTECH
+                                    Equipments</strong></p>
+                                <h1 class="display-1 text-white mb-5 animated slideInLeft"></h1>
+                                <a class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft" href="">Explore
+                                    More</a>
                             </div>
-                            <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium"
-                               href="reciprocating-ac/low_and_medium_pressure_compressors">Explore More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="bg-light rounded-circle mx-auto mb-4">
-                                <img alt="Icon" class="img-fluid" src="img/home/prd-2.jpg">
-                            </div>
-                            <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium"
-                               href="reciprocating-ac/low_and_medium_pressure_compressors">Explore More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="bg-light rounded-circle mx-auto mb-4">
-                                <img alt="Icon" class="img-fluid" src="img/home/prd-3.jpg">
-                            </div>
-                            <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium"
-                               href="reciprocating-ac/low_and_medium_pressure_compressors">Explore More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="bg-light rounded-circle mx-auto mb-4">
-                                <img alt="Icon" class="img-fluid" src="img/home/prd-2.jpg">
-                            </div>
-                            <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium"
-                               href="reciprocating-ac/low_and_medium_pressure_compressors">Explore More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#header-carousel"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#header-carousel"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!-- Product End -->
+</div>
+<!-- Carousel End -->
 
-    <!-- About Start -->
-    <div class="container-xxl about my-5">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-6">
-                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/N0aVqO3GhM8" data-bs-target="#videoModal">
-                            <span id="thumbnail"></span>
-                        </button>
+<!-- Product Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5">Best-selling products</h1>
+        </div>
+        <div class="row g-4">
+            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-12 col-md-12 service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="bg-light rounded-circle mx-auto mb-4">
+                            <img alt="Icon" class=" w-10 img-fluid" src="img/home/prd-1.jpg">
+                        </div>
+                        <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium"
+                           href="products/reciprocating-ac/low_and_medium_pressure_compressors.html">Explore More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white rounded-top p-5 mt-lg-5">
-                        <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <h1 class="display-6 mb-4">One stop solution of COMPLETE COMPRESSED AIR SYSTEM</h1>
-                        <p class="mb-4">We “Briltech Equipments Private Limited” is a Distributor / Channel Partner of the wide spectrum IR Compressors, F Series Air Filters etc. We are manufacturing these products using premium grade raw material that is procured from the authentic vendors of the market. We offer these products at reasonable rates and deliver these within the promised time-frame.</p>
-                        <div class="row g-5 pt-2 mb-5">
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
-                                <h5 class="mb-3">Annual Maintenance Contract</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
-                            </div>
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
-                                <h5 class="mb-3">Dedicated Experts</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
-                            </div>
+                <div class="col-lg-12 col-md-12 service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="bg-light rounded-circle mx-auto mb-4">
+                            <img alt="Icon" class="img-fluid" src="img/home/prd-2.jpg">
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+                        <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium"
+                           href="products/reciprocating-ac/low_and_medium_pressure_compressors.html">Explore More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="bg-light rounded-circle mx-auto mb-4">
+                            <img alt="Icon" class="img-fluid" src="img/home/prd-3.jpg">
+                        </div>
+                        <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium"
+                           href="products/reciprocating-ac/low_and_medium_pressure_compressors.html">Explore More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="bg-light rounded-circle mx-auto mb-4">
+                            <img alt="Icon" class="img-fluid" src="img/home/prd-2.jpg">
+                        </div>
+                        <h5 class="mb-3">Low & Medium Pressure Compressors</h5>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium"
+                           href="products/reciprocating-ac/low_and_medium_pressure_compressors.html">Explore More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- Product End -->
 
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-0 feature-row">
-<!--                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">-->
-<!--                    <div class="feature-item border h-100 p-5">-->
-<!--                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">-->
-<!--                            <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">-->
-<!--                        </div>-->
-<!--                        <h5 class="mb-3">Award Winning</h5>-->
-<!--                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">24/7 Support</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
+<!-- About Start -->
+<div class="container-xxl about my-5">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-6">
+                <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                    <button class="btn-play" data-bs-target="#videoModal" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/N0aVqO3GhM8" type="button">
+                        <span id="thumbnail"></span>
+                    </button>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Professional Staff</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
-                            <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                        </div>
-                        <h5 class="mb-3">Fair Prices</h5>
-                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
+            <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white rounded-top p-4">
+                    <p class="fs-5 fw-medium text-primary">About Us</p>
+                    <h1 class="display-6 mb-4">COMPLETE COMPRESSED AIR SYSTEM SOLUTION</h1>
+                    <p class="mb-4">We “BRILTECH Equipments Private Limited” is a Distributor / Channel Partner of the
+                        wide spectrum IR Compressors, F Series Air Filters etc. We are manufacturing these products
+                        using premium grade raw material that is procured from the authentic vendors of the market. We
+                        offer these products at reasonable rates and deliver these within the promised time-frame.</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img alt="" class="img-fluid mb-4" src="img/icon/icon-5.png">
+                            <h5 class="mb-3">Annual Maintenance Contract</h5>
+                            <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img alt="" class="img-fluid mb-4" src="img/icon/icon-2.png">
+                            <h5 class="mb-3">Dedicated Experts</h5>
+                            <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+                        </div>
                     </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Video Modal End -->
+</div>
+<!-- About End -->
 
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Services that We Offer</h1>
+<!-- Features Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0 feature-row">
+            <!--                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">-->
+            <!--                    <div class="feature-item border h-100 p-5">-->
+            <!--                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">-->
+            <!--                            <img class="img-fluid" src="img/icon/icon-1.png" alt="Icon">-->
+            <!--                        </div>-->
+            <!--                        <h5 class="mb-3">Award Winning</h5>-->
+            <!--                        <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="feature-item border h-100 p-5">
+                    <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                        <img alt="Icon" class="img-fluid" src="img/icon/icon-4.png">
+                    </div>
+                    <h5 class="mb-3">24/7 Support</h5>
+                    <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/img.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Spare Parts</h5>
-                            <p class="mb-0">Check out, What air compressor parts and spares do BRILTECH Equipments offer?</p>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="feature-item border h-100 p-5">
+                    <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                        <img alt="Icon" class="img-fluid" src="img/icon/icon-2.png">
+                    </div>
+                    <h5 class="mb-3">Professional Staff</h5>
+                    <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="feature-item border h-100 p-5">
+                    <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                        <img alt="Icon" class="img-fluid" src="img/icon/icon-3.png">
+                    </div>
+                    <h5 class="mb-3">Fair Prices</h5>
+                    <p class="mb-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+<!-- Video Modal Start -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal modal-video fade" id="videoModal"
+     tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                    <iframe allow="autoplay" allowfullscreen allowscriptaccess="always" class="embed-responsive-item" id="video"
+                            src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Modal End -->
+
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-medium text-primary">Our Services</p>
+            <h1 class="display-5 mb-5">Services that We Offer</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
+                            <img alt="Icon" class="img-fluid" src="img/icon/img.png">
                         </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
+                        <h5 class="mb-3">Spare Parts</h5>
+                        <p class="mb-0">Check out, What air compressor parts and spares do BRILTECH Equipments
+                            offer?</p>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium" href="">Read More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">Service & Installation</h5>
-                            <p class="mb-0">For compressed air system installation, BRILTECH Equipments is your single source provider</p>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
+                            <img alt="Icon" class="img-fluid" src="img/icon/icon-6.png">
                         </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
+                        <h5 class="mb-3">Service & Installation</h5>
+                        <p class="mb-0">For compressed air system installation, BRILTECH Equipments is your single
+                            source provider</p>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium" href="">Read More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">AMC</h5>
-                            <p class="mb-0">Maximizing Equipment Lifespan and Minimizing Downtime: The Benefits of Annual Maintenance Contracts </p>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item position-relative h-100">
+                    <div class="service-text rounded p-5">
+                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 64px; height: 64px;">
+                            <img alt="Icon" class="img-fluid" src="img/icon/icon-10.png">
                         </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
+                        <h5 class="mb-3">AMC</h5>
+                        <p class="mb-0">Maximizing Equipment Lifespan and Minimizing Downtime: The Benefits of Annual
+                            Maintenance Contracts </p>
+                    </div>
+                    <div class="service-btn rounded-0 rounded-bottom">
+                        <a class="text-primary fw-medium" href="">Read More<i
+                                class="bi bi-chevron-double-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+</div>
+<!-- Service End -->
 
 
-    <!-- Project Start -->
+<!-- Project Start -->
 <!--    <div class="container-xxl pt-5">-->
 <!--        <div class="container">-->
 <!--            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">-->
@@ -519,77 +503,126 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-    <!-- Project End -->
+<!-- Project End -->
 
 
-    <!-- Quote Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
+<!-- Quote Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="fs-5 fw-medium text-primary">Get A Quote</p>
+                <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                    eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+                <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
                         <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </span>
-                        <span class="fs-5 fw-medium mx-4">+91 99993 88641</span>
-                    </a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
+                    <span class="fs-5 fw-medium mx-4">+91 99993 88641</span>
+                </a>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <h2 class="mb-4">Get A Free Quote</h2>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="name" placeholder="Your Name" type="text">
+                            <label for="name">Your Name</label>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="mail" placeholder="Your Email" type="email">
+                            <label for="mail">Your Email</label>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <input class="form-control" id="mobile" placeholder="Your Mobile" type="text">
+                            <label for="mobile">Your Mobile</label>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Small Reciprocating Air Compressors</option>
-                                    <option value="">Large Reciprocating Air Compressor</option>
-                                    <option value="">Oil-Flooded Rotary Screw Air compressors</option>
-                                    <option value="">Oil free Air Compressors (Class Zero)</option>
-                                    <option value="">Air Treatment </option>
-                                    <option value="">Compressed Air Aluminum piping</option>
-                                </select>
-                                <label for="service">Choose A Products</label>
-                            </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="service">
+                                <option selected>Small Reciprocating Air Compressors</option>
+                                <option value="">Large Reciprocating Air Compressor</option>
+                                <option value="">Oil-Flooded Rotary Screw Air compressors</option>
+                                <option value="">Oil free Air Compressors (Class Zero)</option>
+                                <option value="">Air Treatment</option>
+                                <option value="">Compressed Air Aluminum piping</option>
+                            </select>
+                            <label for="service">Choose A Products</label>
                         </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="message" placeholder="Leave a message here"
+                                      style="height: 130px"></textarea>
+                            <label for="message">Message</label>
                         </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quote Start -->
+</div>
+<!-- Quote Start -->
 
+<!-- Brand Start -->
+<div class="brand">
+    <div class="container-fluid">
+        <div class="brand-slider">
+            <div class="brand-item"><img alt="" src="img/cust/alliednippon.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/amber.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/apl.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/ardent.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/banera.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/bharat.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/bl.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/bp.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/cocacola.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/cs.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/dsfrp.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/haier.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/hamdard.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/honda.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/indianoil.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/isgec.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/ju.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/jublient.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/kothari.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/lg.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/modi.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/motherdairy.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/nilkamal.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/radico.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/ramson.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/rpf.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/sleepwell.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/smc.png"></div>
+            <div class="brand-item"><img alt="" src="img/cust/starpaper.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/subros.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/surya.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/swati.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/systemair.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/tata.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/teva.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/toyoinl.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/uflex.jpg"></div>
+            <div class="brand-item"><img alt="" src="img/cust/zahonero.jpg"></div>
+        </div>
+    </div>
+</div>
+<!-- Brand End -->
 
-    <!-- Team Start -->
+<!-- Team Start -->
 <!--    <div class="container-xxl py-5">-->
 <!--        <div class="container">-->
 <!--            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">-->
@@ -652,10 +685,10 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-    <!-- Team End -->
+<!-- Team End -->
 
 
-    <!-- Testimonial Start -->
+<!-- Testimonial Start -->
 <!--    <div class="container-xxl pt-5">-->
 <!--        <div class="container">-->
 <!--            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">-->
@@ -690,86 +723,91 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-    <!-- Testimonial End -->
+<!-- Testimonial End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, Uttar Pradesh 201301, IN</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99993 88641</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>customersupport@briltechgroup.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-white mb-4">Our Office</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Noida, Uttar Pradesh 201301, IN</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 99993 88641</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>customersupport@briltechgroup.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h4 class="text-white mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Business Hours</h4>
+                <p class="mb-1">Monday - Friday</p>
+                <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                <p class="mb-1">Saturday</p>
+                <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                <p class="mb-1">Sunday</p>
+                <h6 class="text-light">Closed</h6>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Newsletter</h4>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative w-100">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" placeholder="Your email"
+                           type="text">
+                    <button class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" type="button">SignUp
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Briltech Equipments Private Limited</a>, All Right Reserved.
-                </div>
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="fw-medium text-light" href="#">Briltech Equipments Private Limited</a>, All Right
+                Reserved.
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+</div>
+<!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- Back to Top -->
+<a class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" href="#"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
