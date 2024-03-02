@@ -604,3 +604,19 @@
     font-size: 1.1em;
     font-weight: 700;
 }
+
+marquee{
+    color: #ffffff!important;
+    font-size: 14px;
+}
+
+marquee a{
+    color: #ffffff!important;
+    font-size: 14px;
+}
+
+marquee a:hover{
+    color: #ffffff!important;
+    font-size: 14px;
+    text-decoration: none;
+}
